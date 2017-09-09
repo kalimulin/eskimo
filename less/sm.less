@@ -1,0 +1,68 @@
+@media (max-width: 992px){
+  header{
+    width: auto;
+    .profile{
+      & > a:nth-child(2){
+        margin-left: 10px;
+      }
+      & > a:nth-child(3){
+        margin-left: 10px;
+      }
+    }
+    .search-or-ask{
+      padding-right: 105px;
+      input[type=submit] {
+        padding: 0 15px;
+      }
+      input[name=ask]{
+        //width: 285px;
+      }
+      & + div{
+        margin-right: -15px;
+        padding-right: 15px;
+      }
+    }
+  }
+  .maincontent {
+    .leftcontent{
+      & > * {
+        margin: 0;
+      }
+      border-right: 0;
+      .video-playlist{
+        .video-box .video-tags .video-share{
+          padding-right: 0;
+        }
+        .video-answwers{
+          margin-top: 30px;
+        }
+      }
+    }
+    .rightcontent .simillar-questions .simillar-question{
+      //display: inline-block;
+      //width: 49%;
+      .question-info{
+        .author{
+          line-height: 26px;
+        }
+        .views{
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  #login-form .modal-dialog {
+    width: auto;
+  }
+
+
+  footer{
+    .bottom-menu li {
+      margin-right: 25px;
+
+    }
+
+  }
+
+}

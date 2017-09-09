@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<style>
+  body{
+    background-color: #cecece;
+  }
+</style>
+
+<body>
+    <div class="modal fade in" role="dialog" id="login-form" style="display: flex;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button> -->
+                    <h3>Eskimo</h3>
+                    <h4>ask me more</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="soc-auth">
+                          <a href="#" class="google-auth">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                            <span>Continue with Google</span>
+                          </a>
+                          <a href="#" class="facebook-auth">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            <span>Continue with Facebook</span>
+                          </a>
+                          <a href="#" class="twitter-auth">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span>Continue with Twitter</span>
+                          </a>
+                        </div>
+                        <p class="email-auth">
+                          <a href="#">Continue With Email.</a>
+                          By signing up you indicate that you have read and agree to the Terms of Service and Privacy Policy.
+                        </p>
+                      </div>
+                      <div class="col-xs-6">
+                        <h5>Sign-IN</h5>
+                          <div class="form-group">
+                            <input class="form-control" type="text" name="login" id="login" placeholder="Login" />
+                            <label for="login">Login</label>
+                          </div>
+                          <div class="form-group">
+                            <input class="form-control" type="password" name="password" id="password" placeholder="Password" />
+                            <label for="password">Password</label>
+                          </div>
+                          <span class="text-danger">Incorrect login or password</span>
+                          <div class="row login-forgot">
+                            <div class="col-xs-6 forgot-password">
+                              <a href="#">Forgot Password?</a>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                              <input type="submit" value="Login" class="btn">
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

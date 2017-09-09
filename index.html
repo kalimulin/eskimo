@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="flex">
+            <div class="logo-container">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="search-or-ask">
+                <input type="text" name="ask" placeholder="search or ask"><input type="submit" class="btn" value="Ask a Question">
+                <div class="pre-search">
+                    <div class="instruction">Search for interesting content or ask your own question.</div>
+                    <ul class="presearch-results">
+                        <li class="presearch-item">ASP</li>
+                        <li class="presearch-item">ASP.NET MVC</li>
+                        <li class="presearch-item">What is the future of ASP.NET MVC </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile-container">
+                <div class="profile flex-between hidden">
+                    <a href="#"><img src="img/hunting-target.svg" alt=""></a>
+                    <a href="#"><img src="img/bell_3.svg" alt=""></a>
+                    <a href="#"><img src="img/person.png" alt=""></a>
+                </div>
+                <div class="login-button "><a href="#">Login</a></div>
+            </div>
+        </header>
+    </div>
+    <hr>
+    <div class="container maincontent">
+        <div class="row">
+            <div class="leftcontent col-sm-12 col-md-9 col-lg-8">
+                <div class="video-playlist">
+                    <div class="video-box">
+                        <div class="video"><iframe class="visible" width="100%" height="410px" src="https://www.youtube.com/embed/An2jkWiVna8?controls=0&showinfo=0"></iframe>
+                            <div class="side-left"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
+                            <div class="side-right"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+                            <div class="like-button"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                            <div class="video-controls">
+                                <div class="play-button">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                    <i class="fa fa-pause hidden" aria-hidden="true"></i>
+                                </div>
+                                <div class="video-progress">
+                                    <div class="video-seek"></div>
+                                </div>
+                                <div class="fullscreen">
+                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="volume">
+                                    <div class="volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></div>
+                                    <div class="volume-seek">
+                                        <input id="slider1" type="range" min="0" max="100" step="1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-title flex-between">
+                            <div class="userpic"><img src="img/person.png"></div>
+                            <div class="video-info">
+                                <div class="title">How to make this desert ?</div>
+                                <div class="name-and-views"><a href="#">Semenovich</a>
+                                    <p>921, 000 views</p>
+                                </div>
+                            </div>
+                            <div class="video-share">
+                                <a href="#"><img src="img/facebook.png" alt=""></a>
+                                <a href="#"><img src="img/twitter.png" alt=""></a>
+                                <a href="#"><img src="img/gplus.png" alt=""></a>
+                                <a href="#"><img src="img/share.svg" alt=""></a>
+                                <div class="share-menu">
+                                    <ul>
+                                        <li>Copy link</li>
+                                        <li>Embed</li>
+                                        <li>More</li>
+                                    </ul>
+                                </div>
+                                <button class="btn video-answer-button">Answer</button>
+                            </div>
+                        </div>
+                        <div class="video-tags row">
+                            <div class="tags-and-more pull-left">
+                                <div class="tags"><a href="#">#easy</a><a href="#">#not_easy</a><a href="#">#hard</a>
+                                    <a href="#"><img src="img/plus-circle.png"></a>
+                                    <div class="add-tag-form">
+                                        <form class="form-inline">
+                                            <div class="form-group"><input class="form-control" value="" placeholder="Input tags"></div><button class="btn btn-default">Ok</button></form>
+                                    </div>
+                                </div>
+                                <!-- <a href="#"> -->
+                                <div class="video-show-more">show more</div>
+                                <div class="modal in fade video-show-more-content" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                <h4 class="modal-title">Modal title</h4></div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan, nibh a volutpat rutrum, nisi massa imperdiet tellus, at tincidunt libero dui quis lacus. Morbi pretium dolor id nunc commodo, et euismod ligula tristique. Praesent at neque dapibus,
+                                                    rhoncus sem eu, consectetur odio. In sodales elementum venenatis. Aenean congue venenatis massa, in mattis eros imperdiet quis. Curabitur scelerisque, magna mattis consequat sagittis, lectus leo rutrum mauris,
+                                                    ac eleifend purus nisl a metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum aliquam, nisl eget fermentum tincidunt, mauris elit pharetra nibh, vel
+                                                    condimentum ante nunc sed libero. Ut at orci congue, efficitur dui sed, iaculis neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                                </p>
+                                                <p>
+                                                    Integer pharetra sem blandit nulla condimentum dictum. Donec fringilla pretium lectus, in auctor dui rhoncus a. Suspendisse rutrum arcu ante, vitae accumsan lectus consectetur in. Cras in rhoncus lorem. Aliquam erat volutpat. Pellentesque malesuada volutpat
+                                                    dolor a posuere. Sed congue condimentum arcu, ut aliquam metus lobortis vel. Sed eu iaculis eros, vel tempor est. Vivamus nec tempor est. Nulla venenatis iaculis tortor et dignissim.
+                                                </p>
+                                                <p>
+                                                    Phasellus at nisl nec purus efficitur commodo. Vivamus varius nec nibh eget rutrum. Pellentesque consequat accumsan nisi, quis pulvinar risus vehicula quis. Donec eget risus imperdiet, tincidunt sem sit amet, suscipit nibh. Proin eu dignissim leo, ut
+                                                    pretium arcu. Quisque volutpat lectus porttitor, volutpat nisl scelerisque, elementum massa. Vestibulum eget fermentum augue. Pellentesque a erat sit amet orci pellentesque tincidunt sit amet at arcu. Donec
+                                                    in risus efficitur, dapibus quam sed, accumsan diam. Praesent interdum vel ipsum id porttitor.
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan, nibh a volutpat rutrum, nisi massa imperdiet tellus, at tincidunt libero dui quis lacus. Morbi pretium dolor id nunc commodo, et euismod ligula tristique. Praesent at neque dapibus,
+                                                    rhoncus sem eu, consectetur odio. In sodales elementum venenatis. Aenean congue venenatis massa, in mattis eros imperdiet quis. Curabitur scelerisque, magna mattis consequat sagittis, lectus leo rutrum mauris,
+                                                    ac eleifend purus nisl a metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum aliquam, nisl eget fermentum tincidunt, mauris elit pharetra nibh, vel
+                                                    condimentum ante nunc sed libero. Ut at orci congue, efficitur dui sed, iaculis neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                                </p>
+                                                <p>
+                                                    Integer pharetra sem blandit nulla condimentum dictum. Donec fringilla pretium lectus, in auctor dui rhoncus a. Suspendisse rutrum arcu ante, vitae accumsan lectus consectetur in. Cras in rhoncus lorem. Aliquam erat volutpat. Pellentesque malesuada volutpat
+                                                    dolor a posuere. Sed congue condimentum arcu, ut aliquam metus lobortis vel. Sed eu iaculis eros, vel tempor est. Vivamus nec tempor est. Nulla venenatis iaculis tortor et dignissim.
+                                                </p>
+                                                <p>
+                                                    Phasellus at nisl nec purus efficitur commodo. Vivamus varius nec nibh eget rutrum. Pellentesque consequat accumsan nisi, quis pulvinar risus vehicula quis. Donec eget risus imperdiet, tincidunt sem sit amet, suscipit nibh. Proin eu dignissim leo, ut
+                                                    pretium arcu. Quisque volutpat lectus porttitor, volutpat nisl scelerisque, elementum massa. Vestibulum eget fermentum augue. Pellentesque a erat sit amet orci pellentesque tincidunt sit amet at arcu. Donec
+                                                    in risus efficitur, dapibus quam sed, accumsan diam. Praesent interdum vel ipsum id porttitor.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <nav aria-label="Page navigation">
+                                                    <ul class="pagination">
+                                                        <li>
+                                                            <a href="#" aria-label="Previous">
+                                                                <span aria-hidden="true">&laquo;</span>
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li>
+                                                            <a href="#" aria-label="Next">
+                                                                <span aria-hidden="true">&raquo;</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- </a> -->
+                            </div>
+                            <div class="video-share pull-right">
+                                <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>Share</a>
+                                <a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>16</a>
+                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>2,5 k</a>
+                            </div>
+                        </div>
+                        <div class="video-comments"><a href="#">view all 18 comments</a>
+                            <div class="video-comment">
+                                <!-- react-text: 74 -->serpukin
+                                <!-- /react-text --><a href="#">#easy</a>
+                                <p>Deciphering Marketing Lingo For Small Business Owners</p>
+                            </div>
+                            <div class="video-comment">
+                                <!-- react-text: 78 -->mothermilk
+                                <!-- /react-text --><a href="#">@serpukin</a>
+                                <p>Enlightenment Is Not Just One State</p>
+                            </div>
+                            <div class="video-comment">
+                                serpukin
+                                <a href="#">@mothermilk</a>
+                                <p>New Ideas For A Low Cost Vacation On Water</p>
+                            </div>
+
+                        </div>
+                        <div class="video-add-comment">
+                            <div href="#">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-xs-10"><input class="form-control" type="text" placeholder="Add comment" class="form-control"></div>
+                                        <div class="col-xs-2"><button  class="btn btn-default btn-block"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-answers row">
+                        <div class="col-xs-6">
+                            <div class="video-thumb"><img src="http://img.youtube.com/vi/DkaUsBwe0fo/0.jpg">
+                                <div class="thumb-video-info">
+                                    <div class="play-button"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></div>
+                                    <div class="video-info">
+                                        <div class="user-info pull-left">
+                                            <a href="#"><img src="img/person.png" alt="">
+                                                <div class="username">Serpukin</div>
+                                            </a>
+                                        </div>
+                                        <div class="likes pull-left"><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i><!-- react-text: 109 -->125<!-- /react-text --></a></div>
+                                        <div class="time-from pull-right">1 hr</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="video-thumb">
+                                <div class="thumb-video-info">
+                                    <div class="play-button"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></div>
+                                    <div class="video-info">
+                                        <div class="user-info pull-left">
+                                            <a href="#"><img src="img/person.png" alt="">
+                                                <div class="username">Serpukin</div>
+                                            </a>
+                                        </div>
+                                        <div class="likes pull-left"><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i><!-- react-text: 109 -->125<!-- /react-text --></a></div>
+                                        <div class="time-from pull-right">1 hr</div>
+                                    </div>
+                                </div>
+                                <img src="http://img.youtube.com/vi/roeIzSyed2U/0.jpg"></div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="video-thumb"><img src="http://img.youtube.com/vi/FUBAAnVxxM0/0.jpg">
+                                <div class="thumb-video-info">
+                                    <div class="play-button"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></div>
+                                    <div class="video-info">
+                                        <div class="user-info pull-left">
+                                            <a href="#"><img src="img/person.png" alt="">
+                                                <div class="username">Serpukin</div>
+                                            </a>
+                                        </div>
+                                        <div class="likes pull-left"><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i><!-- react-text: 129 -->125<!-- /react-text --></a></div>
+                                        <div class="time-from pull-right">1 hr</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="video-thumb"><img src="http://img.youtube.com/vi/wowXeAGH1Sg/0.jpg">
+                                <div class="thumb-video-info">
+                                    <div class="play-button"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></div>
+                                    <div class="video-info">
+                                        <div class="user-info pull-left">
+                                            <a href="#"><img src="img/person.png" alt="">
+                                                <div class="username">Serpukin</div>
+                                            </a>
+                                        </div>
+                                        <div class="likes pull-left"><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i><!-- react-text: 146 -->125<!-- /react-text --></a></div>
+                                        <div class="time-from pull-right">1 hr</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightcontent col-sm-12 col-md-3 col-lg-4">
+                <div class="simillar-questions row">
+                    <h2 class="col-xs-12">Simillar questions</h2>
+                    <div class="simillar-question col-xs-6 col-md-12">
+                        <a href="#">
+                            <div class="thumb"><img src="img/thumb.jpg" alt=""></div>
+                        </a>
+                        <div class="question-info">
+                            <h3>Home Audio Recording For Everyone ?</h3>
+                            <div class="views">123, 825 views</div>
+                            <a href="#" class="author"><img src="img/person.png" alt="">
+                                <!-- react-text: 160 -->Jackson Garner
+                                <!-- /react-text -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="simillar-question col-xs-6 col-md-12">
+                        <a href="#">
+                            <div class="thumb"><img src="img/thumb.jpg" alt=""></div>
+                        </a>
+                        <div class="question-info">
+                            <h3>Home Audio Recording For Everyone ?</h3>
+                            <div class="views">123, 825 views</div>
+                            <a href="#" class="author"><img src="img/person.png" alt="">
+                                <!-- react-text: 170 -->Jackson Garner
+                                <!-- /react-text -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="simillar-question col-xs-6 col-md-12">
+                        <a href="#">
+                            <div class="thumb"><img src="img/thumb.jpg" alt=""></div>
+                        </a>
+                        <div class="question-info">
+                            <h3>Home Audio Recording For Everyone ?</h3>
+                            <div class="views">123, 825 views</div>
+                            <a href="#" class="author"><img src="img/person.png" alt="">
+                                <!-- react-text: 180 -->Jackson Garner
+                                <!-- /react-text -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="simillar-question col-xs-6 col-md-12">
+                        <a href="#">
+                            <div class="thumb"><img src="img/thumb.jpg" alt=""></div>
+                        </a>
+                        <div class="question-info">
+                            <h3>Home Audio Recording For Everyone ?</h3>
+                            <div class="views">123, 825 views</div>
+                            <a href="#" class="author"><img src="img/person.png" alt="">
+                                <!-- react-text: 190 -->Jackson Garner
+                                <!-- /react-text -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12"><a href="#" class="more-questions">More questions</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer class="container">
+        <div class="row">
+            <div class="logo col-sm-2">
+                <div>Eskimo</div>
+                <div>
+                    <p>ask</p>
+                    <p>me</p>
+                    <p>more</p>
+                </div>
+            </div>
+            <ul class="bottom-menu col-sm-5">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="copyright col-sm-5 pull-right">Copyright © 2016, Escimo. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <div class="modal fade in" role="dialog" id="login-form" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    <h3>Eskimo</h3>
+                    <h4>ask me more</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="soc-auth">
+                                <a href="#" class="google-auth">
+                                    <i class="fa fa-google" aria-hidden="true"></i>
+                                    <span>Continue with Google</span>
+                                </a>
+                                <a href="#" class="facebook-auth">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    <span>Continue with Facebook</span>
+                                </a>
+                                <a href="#" class="twitter-auth">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <span>Continue with Twitter</span>
+                                </a>
+                            </div>
+                            <p class="email-auth">
+                                <a href="#">Continue With Email.</a> By signing up you indicate that you have read and agree to the Terms of Service and Privacy Policy.
+                            </p>
+                        </div>
+                        <div class="col-xs-6">
+                            <h5>Sign-IN</h5>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="login" id="login" placeholder="Login" />
+                                    <label for="login">Login</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" name="password" id="password" placeholder="Password" />
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="row login-forgot">
+                                    <div class="col-xs-6 forgot-password">
+                                        <a href="#">Forgot Password?</a>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <input type="submit" value="Login" class="btn">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- это только для демонстрации -->
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $('.tags img').on('click', function(e) {
+            e.preventDefault();
+            $('.add-tag-form').toggle();
+        })
+        $('.video-show-more').on('click', function(e) {
+            e.preventDefault();
+            $('.video-show-more-content').addClass('flex');
+
+            $('.close').on('click', function(e) {
+                e.preventDefault();
+                $('.video-show-more-content').removeClass('flex');
+            })
+        })
+    </script>
+    <!-- это только для демонстрации -->
+
+
+</body>
+
+</html>
